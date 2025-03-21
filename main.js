@@ -1,4 +1,11 @@
-//REVISAO DO JAVA SCRIPT
+//##### java script#####
+//TIPOS DE VARIAVEIS
+
+//let a = escopo local
+//var b = escopo global
+//const c = constante
+
+
 
 // ARRAY
 //var k = [1,2,3,4]
@@ -54,12 +61,14 @@ console.log(x)
 console.log(y)
 */
 
-function Carros(nome,ano,cor,modelo,popular){
+
+// Classe de função
+/*function Carros(nome,ano,cor,modelo,popular){
     this.nome = nome
     this.ano = ano
     this.cor = cor
     this.modelo = modelo
-    this.popular = popular
+    this.popular = popular ? "Popular" : "Não carro velho"
 }
 
 var a = new Carros ("Celta", 2000, "Azul", "Sprit", true)
@@ -67,3 +76,47 @@ var b = new Carros ("Ferrari F-Spider", 2018, "Vermelho", "Esportivo", false)
 
 console.log(a)
 console.log(b)
+*/
+
+/*t = [1,2,3,4]
+t.forEach(b => {
+    if((b%2) ===0){
+        console.log(b, "é par")
+    }
+    else{
+        console.log(b,"é impar")
+    } 
+});
+
+console.log(t[0], t[1])
+*/
+
+// ARRAY DE OBJETO
+
+/*w = [
+    {nome: "floriano" , idade:"99"},
+    {nome: "floriana" , idade:"99"}
+]
+console.log(w)
+*/
+
+
+z = []
+
+function Alunos(nome,rgm,curso){
+    this.nome = nome
+    this.rgm = rgm
+    this.curso = curso
+    z.push(nome, rgm, curso)
+}
+
+var a = new Alunos("Claudia", 5599748, "ads")
+var b = new Alunos("Maria", 5599748, "adm")
+
+z.forEach(y => {
+    if(y === "ads"){
+        console.log("Curso Bom")
+    }else{
+        console.log("curso Ruim")
+    }
+});
