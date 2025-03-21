@@ -101,22 +101,54 @@ console.log(w)
 */
 
 
-z = []
+/*let z = []
 
 function Alunos(nome,rgm,curso){
     this.nome = nome
     this.rgm = rgm
     this.curso = curso
-    z.push(nome, rgm, curso)
+    z.push(this)
 }
 
-var a = new Alunos("Claudia", 5599748, "ads")
-var b = new Alunos("Maria", 5599748, "adm")
+var a = new Alunos("Claudia", 5599748, "ads:")
+var b = new Alunos("Maria", 5599748, "adm:")
+var c = new Alunos("Clara", 5599748, "ads:")
+var d = new Alunos("Alinhandro", 5599748, "educacao fisica:")
+var e = new Alunos("Lucas", 5599748, "estetica:")
 
 z.forEach(y => {
-    if(y === "ads"){
-        console.log("Curso Bom")
+    if(y.curso === "ads:"){
+        console.log(y.curso,"Curso Top")
     }else{
-        console.log("curso Ruim")
+        console.log(y.curso,"curso Lixo")
     }
+});
+
+
+console.log(z)
+*/
+
+
+let t = []
+
+function Times(nome,jogador,estadio){
+    this.nome = nome
+    this.jogador = jogador
+    this.estadio = estadio
+    t.push(this)
+}
+
+var a = new Times("Santos", "Neymar", "Vila Belmiro")
+var b = new Times("Palmeiras", "Dudu", "Allianz Parque")
+var c = new Times("São Paulo", "Lucas moura", "Morumbi")
+var d = new Times("Cruzeiro", "Cassio", "Mineirão")
+var e = new Times("Cruzeiro", "Gabigol", "Mineirão")
+
+t.forEach(w => {
+    if(w.nome === "São Paulo"){
+        console.log(w.nome,"Soberano o maior, com o melhor estadio", w.estadio)
+    }else{
+        console.log(w.nome,"Time Lixo")
+    }
+    
 });
