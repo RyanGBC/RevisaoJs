@@ -152,3 +152,29 @@ t.forEach(w => {
     }
     
 });
+
+
+
+
+let l = []
+
+function Timesse(nome,estadio,jogador){
+  this.nome = nome
+  this.estadio = estadio
+  this.jogador = jogador
+  l.push(this)
+}
+
+var time1 = new Timesse  ("Real Madrid", "Santiago Bernabeu", "Rodrygo raio")
+var time2 = new Timesse  ("Juventos", "nao faço ideia", "dybala")
+
+
+
+
+l.forEach(t => {
+    if(t.nome === "Real Madrid"){
+      console.log(t.nome, "TIME MAIS FODA DO MUNDO")
+    }else{
+      console.log(t.nome, "TIME LIXO DO KRL")
+    }    
+});
