@@ -178,3 +178,50 @@ l.forEach(t => {
       console.log(t.nome, "TIME LIXO DO KRL")
     }    
 });
+
+
+let s = []
+
+function Camisas(estampa, marca, tamanho){
+    this.estampas = estampa
+    this.marca = marca
+    this.tamanho = tamanho
+    s.push(this)
+}
+
+
+var camisa1 = new Camisas ("Azul", "Nike", "G")
+var camisa2 = new Camisas ("Amarelo", "Louis vuitton", "M")
+
+
+s.forEach(c => {
+
+    if(c.marca === "Nike"){
+        console.log(c.marca, "Marca maneira")
+    }else{
+        console.log(c.marca, "Marca luxo")
+    }
+
+});
+
+
+let r = []
+
+function CarrosV(nome, marca, cambio){
+    this.nome = nome
+    this.marca = marca
+    this.cambio = cambio
+    r.push(this)
+}
+
+
+var carro1 = new CarrosV ("CLA 200", "Mercedes", "Manual")
+var carro1 = new CarrosV ("Fusca", "Volkswagen", "Automatico")
+
+r.forEach(o => {
+    if(o.nome === "Fusca"){
+        console.log(o.nome, "O mais brabo")
+    }else{
+        console.log(o.nome, "Até vai!")
+    }
+});
