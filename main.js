@@ -8,14 +8,14 @@
 
 
 // ARRAY
-//var k = [1,2,3,4]
+/*var k = [1,2,3,4]
 
-/*console.log(k)
+console.log(k)
 
 console.log(k[1])
 */
 
-// adiciona algo no array
+// adiciona algo no final do array
 /*k.push(5)
 console.log(k)
 console.log(k.length)
